@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Prata&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Google Sans', sans-serif;
 }
 
 body {
@@ -22,7 +21,7 @@ body {
 .hero {
     height: 90%;
     width: 95%;
-    border-radius: 35px;
+    border-radius: 2.25rem;
     background-color: white;
     display: flex;
     align-items: center;
@@ -32,19 +31,83 @@ body {
 .content, .login {
     height: 98%;
     width: 49.5%;
-    border-radius: 30px;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .content {
+    color: white;
     background-image: url(../images/loginPage.jpg);
     overflow: hidden;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 5%;
+    padding: 5rem 5rem 2rem 5rem;
 }
 
 .login {
-    background-color: white;
+    padding: 2rem 5rem 2rem 5rem;
 }
+
+.content h1 {
+    font-family: "Prata", serif;
+    font-size: 3.35rem;
+}
+
+.content p {
+    font-family: "Google Sans", sans-serif;
+    position: bottom;
+    font-size: 1rem;
+}
+
+.content p span {
+    font-weight: 700;
+}
+
+.loginForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;align-items: center;
+    font-family: "Google Sans", sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.logo h1 {
+    font-family: "Prata", serif;
+    color: #1C4D8D;
+    font-size: 1.25rem;
+    margin-left: 0.25rem;
+}
+
+.logo h1 span {
+    color: #0F2854;
+}
+
+.loginForm h2 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+.loginForm p {
+    margin-top: 0.5rem;
+}
+
+.loginForm h3 {
+    margin-top: 0.5rem;
+}
+
+
+
