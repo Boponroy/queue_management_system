@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 * {
     margin: 0;
@@ -45,15 +45,18 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 5rem 5rem 2rem 5rem;
+    padding: 4rem 5rem 2rem 5rem;
 }
 
 .login {
-    padding: 2rem 5rem 2rem 5rem;
+    padding: 2rem 5rem;
+    font-family: "Google Sans", sans-serif;
+    align-items: center;
 }
 
 .content h1 {
-    font-family: "Prata", serif;
+    font-family: "Lora", serif;
+    font-weight: 600;
     font-size: 3.35rem;
 }
 
@@ -67,17 +70,9 @@ body {
     font-weight: 700;
 }
 
-.loginForm {
-    width: 100%;
-    display: flex;
-    flex-direction: column;align-items: center;
-    font-family: "Google Sans", sans-serif;
-}
-
 .logo {
     display: flex;
     align-items: center;
-    justify-content: center;
     height: 2rem;
 }
 
@@ -86,28 +81,84 @@ body {
 }
 
 .logo h1 {
-    font-family: "Prata", serif;
+    font-family: "Lora", serif;
     color: #1C4D8D;
     font-size: 1.25rem;
     margin-left: 0.25rem;
 }
 
-.logo h1 span {
+.logo span {
     color: #0F2854;
 }
 
+.loginForm {
+    display: flex;
+    flex-direction: column;align-items: center;
+}
+
 .loginForm h2 {
-    margin-top: 2rem;
-    font-size: 2.5rem;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 2.75rem;
 }
 
-.loginForm p {
-    margin-top: 0.5rem;
+.form {
+    margin-top: 0.75rem;
 }
 
-.loginForm h3 {
-    margin-top: 0.5rem;
+.input {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    width: 20rem;
+    overflow: hidden;
+    background-color: #D1F8EF;
+    border-radius: 0.5rem;
 }
 
+.input img{
+    height: 1.5rem;
+    width: auto;
+    object-fit: cover;
+    margin-left: 0.75rem;
+}
 
+.input input {
+    font-size: 1rem;
+    border: none;
+    overflow: hidden;
+    background-color: #D1F8EF;
+    margin: 0rem 0.75rem;
+    width: 100%;
+}
 
+.input input:focus {
+    outline: none;
+}
+
+.loginForm button {
+    margin-top: 1.5rem;
+    height: 3rem;
+    width: 100%;
+    border: none;
+    background-color: #1C4D8D;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    transition: 0.1s;
+}
+
+.loginForm button:hover {
+    background-color: #0F2854;
+    cursor: pointer;
+}
+
+.signUp a {
+    text-decoration: none;
+    color: #1C4D8D;
+    transition: 0.1s;
+}
+
+.signUp a:hover {
+    color: #0F2854;
+}
